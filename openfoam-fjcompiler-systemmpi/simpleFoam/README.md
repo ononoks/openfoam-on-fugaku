@@ -1,16 +1,7 @@
 # OpenFOAM parallel processing on Fugaku
 使い方 : 
-
-0. 富岳のログインノードにアクセスし自分の作業ディレクトリにこのフォルダをコピーする. (ログインノードへのアクセスは`docs/fugaku/environment`を参照)
-1. 解析メッシュのサンプルとして`BH0017L.msh`を `meshing_deformation_cfd_batch/data/`においています。このディレクトリにコピーしてください. 
-
-2. ログインノードで
-   ``` bash
-   chmod +x run.sh
-   pjsub run.sh
-   ```
-
-3. 途中計算は `output...../0/1/stdout.1.0` に出力される.
++ 途中計算は `output...../0/1/stdout.1.0` に出力される
++ `run.sh`中の`hp123456`の部分と`u123456`の部分は自分のものに書き換える
 
 
 ### 注意点
